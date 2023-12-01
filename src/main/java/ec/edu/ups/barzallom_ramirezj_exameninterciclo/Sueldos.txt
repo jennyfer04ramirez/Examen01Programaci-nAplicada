@@ -1,0 +1,4 @@
+Nombre: Andrea Tipo: Tiempo Completo Sueldo basico: 4.5 Sueldo horas extra: 5.25 Sueldo seguro: -24.75 Sueldo bonificaciones: -20.75
+Nombre: Juan Tipo: Tiempo Parcial Sueldo basico: 5.0 Sueldo horas extra: NO Sueldo seguro: -25.0 Sueldo bonificaciones: -22.0
+Nombre: Miguel Tipo: Tiempo Parcial Sueldo basico: 10.0 Sueldo horas extra: 11.5 Sueldo seguro: NO Sueldo bonificaciones: 14.5
+Nombre: Andrea Tipo: Tiempo Completo Sueldo basico: 10.5 Sueldo horas extra: 12.75 Sueldo seguro: NO Sueldo bonificaciones: 17.55

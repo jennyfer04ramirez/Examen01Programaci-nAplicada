@@ -20,19 +20,21 @@ public class DecBonificaciones extends DecoradorEmpleado {
     @Override
     public double getSueldo() {
         double sueldo = super.getSueldo();
-        double bono = sueldo;
+
         if (empleado.getTipo().equals("Tiempo Completo")) {
-            int bonoPorBonificacion = (int) bono / 3;
-            bono += bonoPorBonificacion;
-            int bonoRes = bonificaciones % 3;
-            if (bonoRes > 0) {
-                bono += bonoRes * 0.40;
+            int bonoPorBonificacion = bonificaciones / 3; 
+            sueldo += bonoPorBonificacion;
+
+            int bonoRestante = bonificaciones % 3;
+            if (bonoRestante > 0) {
+                sueldo += bonoRestante * 0.40;
             }
-        }else {
+        } else {
             int bonoPorBonificacion = bonificaciones / 2;
-            bono += bonoPorBonificacion;
-        } 
-        return bono;
+            sueldo += bonoPorBonificacion;
+        }
+
+        return sueldo;
     }
 
 }

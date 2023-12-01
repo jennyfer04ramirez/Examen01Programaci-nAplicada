@@ -21,9 +21,9 @@ public class DecMinutosExtra extends DecoradorEmpleado {
         double sueldo = super.getSueldo();
         double pagoExtra = 0;
         if (empleado.getTipo().equals("Tiempo Completo")) {
-            pagoExtra = minutosExtra * 0.75;
+            pagoExtra = (minutosExtra/60) * 0.75;
         } else {
-            pagoExtra = minutosExtra * 0.50;
+            pagoExtra = (minutosExtra/60) * 0.50;
         }
         return sueldo + pagoExtra;
     }
