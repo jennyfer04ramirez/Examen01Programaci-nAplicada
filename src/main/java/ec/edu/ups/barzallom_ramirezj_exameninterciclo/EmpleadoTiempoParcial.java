@@ -9,20 +9,29 @@ package ec.edu.ups.barzallom_ramirezj_exameninterciclo;
  * @author casa
  */
 public class EmpleadoTiempoParcial implements IEmpleado {
+    private String nombre;
+    private int minutosT;
+
+    public EmpleadoTiempoParcial(String nombre, int minutosT) {
+        this.nombre = nombre;
+        this.minutosT = minutosT;
+    }
 
     @Override
     public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return nombre;
     }
 
     @Override
     public double getSueldo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        int horas = minutosT / 60;
+        return Math.min(horas * 1.00, 10.00);
     }
 
     @Override
     public String getTipo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Tiempo Parcial";
     }
+
     
 }

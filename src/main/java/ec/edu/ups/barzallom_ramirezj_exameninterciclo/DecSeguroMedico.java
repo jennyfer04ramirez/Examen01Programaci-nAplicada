@@ -10,19 +10,12 @@ package ec.edu.ups.barzallom_ramirezj_exameninterciclo;
  */
 public class DecSeguroMedico extends DecoradorEmpleado {
 
-    @Override
-    public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public DecSeguroMedico(IEmpleado empleado) {
+        super(empleado);
     }
 
     @Override
     public double getSueldo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return super.getSueldo() - 30.00;
     }
-
-    @Override
-    public String getTipo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }

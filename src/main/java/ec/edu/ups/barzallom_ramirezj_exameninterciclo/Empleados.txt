@@ -1,0 +1,5 @@
+Nombre,Tipo empleado,minutos,minutos extras,seguro médico,bonificaciones
+Andrea,Tiempo Completo,180,60,SI,12
+Juan,Tiempo Parcial,300,null,SI,6
+Miguel,Tiempo Parcial,780,null,NO,7
+Andrea,Tiempo Completo,420,180,NO,14
