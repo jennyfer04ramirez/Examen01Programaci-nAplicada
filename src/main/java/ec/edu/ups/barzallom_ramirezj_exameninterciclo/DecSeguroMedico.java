@@ -8,7 +8,7 @@ package ec.edu.ups.barzallom_ramirezj_exameninterciclo;
  *
  * @author casa
  */
-public class EmpleadoTiempoCompleto implements IEmpleado {
+public class DecSeguroMedico extends DecoradorEmpleado {
 
     @Override
     public String getNombre() {

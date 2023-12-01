@@ -9,5 +9,7 @@ package ec.edu.ups.barzallom_ramirezj_exameninterciclo;
  * @author casa
  */
 public interface IEmpleado {
-    
+    public String getNombre();
+    public double getSueldo();
+    public String getTipo();
 }
